@@ -1,0 +1,26 @@
+name: Wine Quality Analysis CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Docker environment
+      uses: docker/setup-buildx-action@v1
+
+    - name: Build Docker image
+      run: docker build -t wine_quality_analysis_app .
+
+    - name: Run Docker image
+      run: docker run wine_quality_analysis_app
