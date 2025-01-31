@@ -184,12 +184,6 @@ models/
 logs/
 debug.log
 
-# Ignore YAML and Configs 
-*.yaml
-*.yml
-config.yaml
-config.yml
-
 # Ignore Cache and Temporary Files
 *.tmp
 *.swp
@@ -200,10 +194,3 @@ config.yml
 .DS_Store
 Thumbs.db
 *.lnk
-
-# Ignore Generated Reports 
-*.csv
-*.tsv
-*.xlsx
-*.json
-reports/
