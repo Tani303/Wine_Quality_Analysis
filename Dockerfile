@@ -5,7 +5,7 @@ FROM python:3.10.9-slim
 WORKDIR /wine_quality_analysis
 
 # Copy the requirements file first to cache dependencies
-COPY requirements.txt
+COPY requirements.txt .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
