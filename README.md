@@ -54,4 +54,4 @@ This dataset contains physicochemical attributes (such as acidity, alcohol conte
 - **Preprocesses the data** and **splits it** into training and testing sets.
 - A **RandomForestRegressor model** is trained to predict wine quality.
 - The model's performance is **evaluated** using **Mean Squared Error (MSE)** and **R² Score**.
-- Results are displayed in the **console**.
+- Results are displayed in the **console** and in the results folder depending on the chosen command.
