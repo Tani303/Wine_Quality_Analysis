@@ -169,3 +169,41 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Ignore Results Directory 
+results/
+plots/
+models/
+
+# Ignore Docker Files 
+*.dockerfile
+*.dockerenv
+
+# Ignore Logs and Debugging Files
+*.log
+logs/
+debug.log
+
+# Ignore YAML and Configs 
+*.yaml
+*.yml
+config.yaml
+config.yml
+
+# Ignore Cache and Temporary Files
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Ignore Local Machine-Specific Files 
+.DS_Store
+Thumbs.db
+*.lnk
+
+# Ignore Generated Reports 
+*.csv
+*.tsv
+*.xlsx
+*.json
+reports/
