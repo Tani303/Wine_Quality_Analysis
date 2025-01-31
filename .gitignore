@@ -194,3 +194,5 @@ debug.log
 .DS_Store
 Thumbs.db
 *.lnk
+
+req_env/
