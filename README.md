@@ -10,12 +10,10 @@ This project analyzes wine quality based on physicochemical properties using mac
 
 ### Cloning the Repository:
 ```
-git clone https://github.com/Tani303/Wine_Quality_Analysis.git cd Wine_Quality_Analysis
+git clone https://github.com/Tani303/Wine_Quality_Analysis.git
 ```
 
 ## Running the Application:
-
-### Option 1 - Using Docker:
 - **Build Docker Image**
 ```
 docker build -t wine_quality_analysis_app .
@@ -23,15 +21,6 @@ docker build -t wine_quality_analysis_app .
 - **Run the Docker Image**
 ```
 docker run wine_quality_analysis_app
-```
-
-### Option 2 - Using Shell Script:
-- **Make the script executable and run it:**
-```
-sed -i 's/\r$//' run_pipeline.sh
-```
-```
-./run_pipeline.sh
 ```
 
 ## Dataset Information
