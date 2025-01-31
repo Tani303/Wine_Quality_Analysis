@@ -22,6 +22,10 @@ docker build -t wine_quality_analysis_app .
 ```
 docker run wine_quality_analysis_app
 ```
+- **In orderr to see the result plot and text file use the command below**
+```
+docker run --rm -v "${PWD}/results:/wine_quality_analysis/results" wine_quality_analysis_app
+```
 
 ## Dataset Information
 - **Name:** Wine Quality Dataset  
