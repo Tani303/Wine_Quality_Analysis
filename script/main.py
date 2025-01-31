@@ -29,9 +29,8 @@ def preprocess_data(df):
 
 def plot_quality_distribution(df, output_path):
     """Plot the distribution of wine qualities."""
-    sns.set(style="whitegrid")
     plt.figure(figsize=(10, 6))
-    sns.countplot(x='quality', data=df, palette='Set1')
+    sns.countplot(x='quality', data=df, color='b')  # Using color instead of palette
     plt.title('Distribution of Wine Quality')
     plt.xlabel('Quality')
     plt.ylabel('Frequency')
@@ -43,7 +42,7 @@ def plot_horizontal_correlation_bar_plot(df, output_path):
     corr = df.corr()
     wine_quality_correlations = corr['quality'].drop('quality').sort_values()
     plt.figure(figsize=(10, 12))
-    sns.barplot(x=wine_quality_correlations.values, y=wine_quality_correlations.index, palette='coolwarm')
+    sns.barplot(x=wine_quality_correlations.values, y=wine_quality_correlations.index, color='b')  # Using color instead of palette
     plt.xlabel('Correlation with Wine Quality')
     plt.ylabel('Features')
     plt.title('Correlation of Features with Wine Quality')
