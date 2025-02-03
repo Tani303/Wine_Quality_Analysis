@@ -12,7 +12,10 @@ This project analyzes wine quality based on physicochemical properties using mac
 ```
 git clone https://github.com/Tani303/Wine_Quality_Analysis.git
 ```
-
+### Change to the project directory
+```
+cd Wine_Quality_Analysis
+```
 ## Running the Application:
 - **Build Docker Image**
 ```
